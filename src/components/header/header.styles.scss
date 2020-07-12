@@ -1,0 +1,38 @@
+.head_search {
+  @media (min-width: 988px) {
+    display: none;
+  }
+  padding: 4px;
+  h3 {
+    margin: 5px 0;
+  }
+  margin: 10px 0;
+  input {
+    width: 100%;
+    padding: 6px;
+  }
+}
+.head-name {
+  .form-inline {
+    width: 50%;
+    margin-left: auto;
+    @media (max-width: 988px) {
+      display: none;
+    }
+  }
+  .nav_category {
+    @media (min-width: 988px) {
+      display: none;
+    }
+  }
+  .form-inline .form-control {
+    width: 50%;
+  }
+  .login-btn {
+    font-weight: bold;
+    margin-right: 30px;
+  }
+}
+.bg-color {
+  background-color: #fff !important;
+}
