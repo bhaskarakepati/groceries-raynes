@@ -2,7 +2,6 @@ import React from "react";
 
 import "./menu.styles.scss";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { FaSearch, FaCartPlus, FaPoundSign } from "react-icons/fa";
 
 const Menu = (props) => {
   return (

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import { Form, Button, InputGroup, FormControl } from "react-bootstrap";
 import { FaLock, FaUser } from "react-icons/fa";
