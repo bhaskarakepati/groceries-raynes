@@ -17,6 +17,7 @@ const registerReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         user: action.payload,
+        errors: [],
       };
     case registerTypes.REGISTER_FAILURE:
       return {

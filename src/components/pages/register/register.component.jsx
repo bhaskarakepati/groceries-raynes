@@ -31,10 +31,11 @@ class RegisterPage extends React.Component {
     return (
       <div className="register-container">
         <ul>
-          {user.errors &&
-            user.errors.map((error) => (
+          {errors &&
+            errors.map((error) => (
               <li className="error-message">{error.msg}</li>
             ))}
+          {user && user.msg && <li className="success-message">{user.msg}</li>}
         </ul>
         <Form onSubmit={this.onRegister}>
           <Form.Group>
@@ -111,8 +112,8 @@ class RegisterPage extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    user: state.user,
-    errors: state.errors,
+    user: state.user.user,
+    errors: state.user.errors,
   };
 };
 const mapDispatchToProps = (dispatch) => {

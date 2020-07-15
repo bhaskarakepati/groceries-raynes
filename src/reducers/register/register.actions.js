@@ -17,8 +17,6 @@ export const registerFailure = (error) => ({
 
 export const registerUser = (user) => {
   return async (dispatch) => {
-    console.log("in register user");
-    console.log(user);
     dispatch(registerRequest);
     try {
       const data = JSON.stringify({
@@ -37,10 +35,8 @@ export const registerUser = (user) => {
         config
       );
       let json = await response.data;
-      console.log("error:" + json.errors);
       dispatch(registerSuccess(json));
     } catch (error) {
-      console.log("In error");
       dispatch(registerFailure(error.response.data.errors));
     }
   };
