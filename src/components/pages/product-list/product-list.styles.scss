@@ -1,0 +1,13 @@
+.product-container {
+  margin: 20px;
+}
+
+@media (min-width: 900px) {
+  .product-container {
+    display: flex;
+    margin: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,15 @@
+.singup-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.register-container {
+  max-width: 500px;
+  margin: 40px auto 40px auto;
+  border: 2px solid #e0a800;
+  padding: 25px;
+}
+
+.error-message {
+  color: red;
+}

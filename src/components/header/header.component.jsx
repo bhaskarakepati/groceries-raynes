@@ -26,9 +26,9 @@ class Header extends React.Component {
 
   render() {
     return (
-      <header className="App-header">
+      <header className="app-header">
         <div className="head-name">
-          <Navbar fixed="top" expand="lg" className="bg-color">
+          <Navbar expand="lg" className="bg-color">
             <Navbar.Brand href="/categories">Groceries </Navbar.Brand>
             <Nav className="mr-auto">
               <Nav.Link href="#home">Home</Nav.Link>
@@ -52,21 +52,21 @@ class Header extends React.Component {
                     </Button>
                   </InputGroup.Append>
                 </InputGroup>
-              </Form>
 
-              <Nav className="mr-auto">
-                <Nav.Link href="#login" className="login-btn">
-                  Login / Register
-                </Nav.Link>
-                <ToggleButtonGroup type="checkbox">
-                  <ToggleButton value={1} variant="warning">
-                    <FaCartPlus /> 20
-                  </ToggleButton>
-                  <ToggleButton value={2} variant="lite">
-                    <FaPoundSign /> 20.00
-                  </ToggleButton>
-                </ToggleButtonGroup>
-              </Nav>
+                <Nav className="mr-auto">
+                  <Nav.Link href="/login" className="login-btn">
+                    Login / Register
+                  </Nav.Link>
+                  <ToggleButtonGroup type="checkbox">
+                    <ToggleButton value={1} variant="warning">
+                      <FaCartPlus /> 20
+                    </ToggleButton>
+                    <ToggleButton value={2} variant="lite">
+                      <FaPoundSign /> 20.00
+                    </ToggleButton>
+                  </ToggleButtonGroup>
+                </Nav>
+              </Form>
             </Navbar.Collapse>
           </Navbar>
           <div className="head_search text-center">
