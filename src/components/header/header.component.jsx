@@ -25,6 +25,7 @@ class Header extends React.Component {
   }
 
   render() {
+    const { name } = this.props.loginUser;
     return (
       <header className="app-header">
         <div className="head-name">
@@ -55,7 +56,9 @@ class Header extends React.Component {
 
                 <Nav className="mr-auto">
                   <Nav.Link href="/login" className="login-btn">
-                    Login / Register
+                    <p>
+                      <b>{name ? `Welcome ${name}` : "Login/Register"}</b>
+                    </p>
                   </Nav.Link>
                   <ToggleButtonGroup type="checkbox">
                     <ToggleButton value={1} variant="warning">
@@ -87,6 +90,7 @@ const mapStateToProps = (state) => {
   return {
     drinks: state.drinks,
     categories: state.categories,
+    loginUser: state.loginUser.user,
   };
 };
 
